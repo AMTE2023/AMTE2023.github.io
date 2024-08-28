@@ -23,16 +23,16 @@ PDF:
 [![PDF](/assets/pdf.png)]({{ paper.pdf }})
 {% endif %}
 
-{% if paper.slides %}
-Slides:
 
-[![Slides](/assets/slides.png)]({{ paper.slides }})
-{% endif %}
 {% endcomment %}
 
 **_Authors_**: {{ paper.authors | join: ", " }}
 
 **_Abstract_**: {{ paper.abstract }}
+
+{% if paper.slides %}
+Slides: [![Slides](/assets/slides.png)]({{ paper.slides }})
+{% endif %}
 
 {% endfor %}
 {% else %}
